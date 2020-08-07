@@ -1,0 +1,72 @@
+#displaybar{
+	width: 100%;
+	height: 50px;
+	border: 1px solid black;
+}
+
+#calculator {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 200px;
+	height: 300px;
+}
+#controlscontainer {
+	position: relative;
+	display: grid;
+	width: 200px;
+	height: 300px;
+	grid-template: "a c" fit-content(100%)
+								 "b c" 
+								 "d c";
+	grid-gap: 1px;
+	border: 1px solid black;
+}
+#topbuttonrow {
+	grid-area: a;
+}
+
+body{
+	background-color: theme-color("dark")
+}
+
+#zerobar{
+	grid-area: d;
+}
+#zerobutton{
+	width: 100%;
+	height: 100%
+}
+
+.buttontext {
+	text-align: center;
+	text-justify: center;
+}
+
+#buttongrid {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: auto auto auto;
+	grid-area: b;
+}
+
+#operators {
+	grid-column: 2;
+	display: grid;
+	grid-gap: 10px;
+	grid-area: c;
+}
+.control{
+	display: grid;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+}
+
+
+
+
+.calculatorbutton {
+	text-align: center;
+	justify-content: center;
+}

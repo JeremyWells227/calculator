@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <title>calculator</title>
+  </head>
+  <body>
+		<div class="text-lg-center text-dark"><h1>Basic Calculator</h1></div>
+    <div id="calculator">
+      <div id="displaybar"></div>
+      <div id="controlscontainer">
+        <div id="topbuttonrow">
+          <button class="control btn-primary" onclick="clearAll()"><p class="buttontext">C</p></button>
+        </div>
+        <div id="buttongrid">
+          <button id="1button" class="btn calculatorbutton" onClick="addStack(1)">
+						<p class="buttontext">1</p>
+          </button>
+          <button id="2button" class="btn calculatorbutton" onClick="addStack(2)">
+            <p class="buttontext">2</p>
+          </button>
+          <button id="3button" class="btn calculatorbutton" onClick="addStack(3)">
+            <p class="buttontext">3</p>
+          </button>
+          <button id="4button" class="btn calculatorbutton" onClick="addStack(4)">
+            <p class="buttontext">4</p>
+          </button>
+          <button id="5button" class="btn calculatorbutton" onClick="addStack(5)">
+            <p class="buttontext">5</p>
+          </button>
+          <button id="6button" class="btn calculatorbutton" onClick="addStack(6)">
+            <p class="buttontext">6</p>
+          </button>
+          <button id="7button" class="btn calculatorbutton" onClick="addStack(7)">
+            <p class="buttontext">7</p>
+          </button>
+          <button id="8button" class="btn calculatorbutton" onClick="addStack(8)">
+            <p class="buttontext">8</p>
+          </button>
+          <button id="9button" class="btn calculatorbutton" onClick="addStack(9)">
+            <p class="buttontext">9</p>
+          </button>
+        </div>
+				<div id="zerobar" class='buttongrid'><button id="zerobutton" class="calculatorbutton btn" onclick="addStack(0)">0</button></div> 
+        <div id="operators">
+          <button class="control btn-primary"  onclick="addStack('+')"<p class="buttontext">+</p></button>
+          <button class="control btn-primary"  onclick="addStack('-')"<p class="buttontext">-</p></button>
+          <button class="control btn-primary"  onclick="addStack('*')"<p class="buttontext">*</p></button>
+          <button class="control btn-primary"  onclick="addStack('/')"<p class="buttontext">/</p></button>
+          <button class="control btn-primary"  onclick="evalStack()"><p class="buttontext">=</p></button>
+        </div>
+      </div>
+    </div>
+  <script src="calculator.js"></script>
+  <script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
