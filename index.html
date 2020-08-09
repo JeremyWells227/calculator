@@ -13,7 +13,8 @@
       <div id="displaybar"></div>
       <div id="controlscontainer">
         <div id="topbuttonrow">
-          <button class="control btn-primary" onclick="clearAll()"><p class="buttontext">C</p></button>
+          <button class="topcontrol btn" onclick="clearAll()"><p class="buttontext">C</p></button>
+					<button class="topcontrol btn" onclick="backOne()"><p class="buttontext"><img src="media/iconfinder_backspace_83227.png" alt="Backspace (IcoMoon from iconfinder.com)"></p></button>
         </div>
         <div id="buttongrid">
           <button id="1button" class="btn calculatorbutton" onClick="addStack(1)">
@@ -44,13 +45,16 @@
             <p class="buttontext">9</p>
           </button>
         </div>
-				<div id="zerobar" class='buttongrid'><button id="zerobutton" class="calculatorbutton btn" onclick="addStack(0)">0</button></div> 
+				<div id="zerobar" class='buttongrid'>
+					<button id="zerobutton" class="calculatorbutton btn" onclick="addStack(0)">0</button>
+					<button id="dotbutton" class="calculatorbutton btn" onclick="addStack('.')">.</button>
+				</div> 
         <div id="operators">
-          <button class="control btn-primary"  onclick="addStack('+')"<p class="buttontext">+</p></button>
-          <button class="control btn-primary"  onclick="addStack('-')"<p class="buttontext">-</p></button>
-          <button class="control btn-primary"  onclick="addStack('*')"<p class="buttontext">*</p></button>
-          <button class="control btn-primary"  onclick="addStack('/')"<p class="buttontext">/</p></button>
-          <button class="control btn-primary"  onclick="evalStack()"><p class="buttontext">=</p></button>
+          <button class="control btn"  onclick="addStack('+')"<p class="buttontext">+</p></button>
+          <button class="control btn"  onclick="addStack('-')"<p class="buttontext">-</p></button>
+          <button class="control btn"  onclick="addStack('*')"<p class="buttontext">*</p></button>
+          <button class="control btn"  onclick="addStack('/')"<p class="buttontext">/</p></button>
+          <button class="control btn"  onclick="evalStack()"><p class="buttontext">=</p></button>
         </div>
       </div>
     </div>
